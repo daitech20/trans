@@ -19,7 +19,7 @@
         <h1>Transport form</h1>
 
         <p>
-        Please write address.
+        Please enter the information.
         </p>
         <form action="{% url 'core:index' %}" method="post" enctype="multipart/form-data">
           {% csrf_token %}
@@ -41,23 +41,6 @@
                 </div>
           </div>
 
-          <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-12">
-                  {{form.from_city|as_crispy_field}}
-                </div>
-                <div class="col-lg-4 col-md-12">
-                  {{form.to_city|as_crispy_field}}
-                </div>
-          </div>
-
-          <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-12">
-                  {{form.from_state|as_crispy_field}}
-                </div>
-                <div class="col-lg-4 col-md-12">
-                  {{form.to_state|as_crispy_field}}
-                </div>
-          </div>
 
           <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-12">

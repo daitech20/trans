@@ -13,16 +13,12 @@ def Index(request):
             body = {
                 'from_street_1': form.cleaned_data['from_street1'],
                 'from_street_2': form.cleaned_data['from_street2'],
-                'from_city': form.cleaned_data['from_city'],
-                'from_state': form.cleaned_data['from_state'],
                 'from_zip': form.cleaned_data['from_zip'],
                 'from_country': form.cleaned_data['from_country'],
                 'from_phone': form.cleaned_data['from_phone'],
 
                 'to_street_1': form.cleaned_data['to_street1'],
                 'to_street_2': form.cleaned_data['to_street2'],
-                'to_city': form.cleaned_data['to_city'],
-                'to_state': form.cleaned_data['to_state'],
                 'to_zip': form.cleaned_data['to_zip'],
                 'to_country': form.cleaned_data['to_country'],
                 'to_phone': form.cleaned_data['to_phone'],
