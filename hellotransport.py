@@ -15,11 +15,11 @@ data = {
 
 address = easypost.Address.create(
     verify=["delivery"],
-    street1='a 2',
-    street2='a 1 2',
-    city='1',
-    state='1',
-    zip='1',
-    country='1',
-    phone='1'
+    street1='417 montgomery streat',
+    street2='FL 5',
+    zip='94104',
+    country='US',
+    phone='11231231'
 )
+
+print(address.verifications)

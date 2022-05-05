@@ -7,8 +7,6 @@ def get_shipment(data):
         verify=["delivery"],
         street1=data['from_street_1'],
         street2=data['from_street_2'],
-        city=data['from_city'],
-        state=data['from_state'],
         zip=data['from_zip'],
         country=data['from_country'],
         phone=data['from_phone']
@@ -18,8 +16,6 @@ def get_shipment(data):
         verify=["delivery"],
         street1=data['to_street_1'],
         street2=data['to_street_2'],
-        city=data['to_city'],
-        state=data['to_state'],
         zip=data['to_zip'],
         country=data['to_country'],
         phone=data['to_phone']
